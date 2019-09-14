@@ -3,7 +3,7 @@ let adversite		=		require("./adversite");
 let moreMoney		=		require("./moreMoney");
 
 const mongo			=		require("mongoose");
-mongo.connect("mongodb://whoami39:Wanted336@cluster0-shard-00-00-q4ros.mongodb.net:27017,cluster0-shard-00-01-q4ros.mongodb.net:27017,cluster0-shard-00-02-q4ros.mongodb.net:27017/test?replicaSet=Cluster0-shard-0&ssl=true&authSource=admin");
+mongo.connect("mongodb://whoami39:Wanted336@cluster0-shard-00-00-q4ros.mongodb.net:27017");
 
 const QIWI			=		require("node-qiwi-api").Qiwi;
 const wallet		=		new QIWI("46ff0c25906184e43a2681d3c0038298");
@@ -61,7 +61,7 @@ const Ban			=		mongo.model("Ban", new mongo.Schema({
 
 const Telegram		=		require("node-telegram-bot-api");
 const bot			=		new Telegram(
-	"633603037:AAHVZKDbRYq4kdWCg0jc4nDKppIRs9GFo34",
+	"985371595:AAE8n1xXcmjY7AXO9yZl8kNZsMNUB-JMMIE",
 	{ polling: true }
 );
 
